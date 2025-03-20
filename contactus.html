@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is an example website">
+        <meta name="keywords" content="html5, test webpage, css">
+        <meta name="viewport" content=""width="width=device-width, initial-scale=1.0">
+        <title>Candy Shop</title>
+        <link rel="stylesheet" href="cssformat/stylesheet.css">
+    </head>
+
+    <body> <!-- Body tag of body section display on screen-->
+        <header>
+            <img style="float:left; height: 50px; width: 50px" src="images/favicon.png" alt="logo"> 
+            <h1>Sweet Treats Shop</h1>
+
+            <nav>
+                <ul>
+                    <li id="active"> <a href="index.html"> Home </a></li>
+                    <li> <a href="sweets.html">Sweets</a></li>
+                    <li><a href="prices.html">Prices</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="form-container">
+            <h3>Please enter the following information: </h3>
+            <form action="http:/foo.com" method="put">
+                <label for="first-name">First Name:<span class="required">*</span></label>
+                <input type="text" id="first-name" name="first-name" autofocus required><br>
+            
+                <label for="last-name">Last Name:<span class="required">*</span></label>
+                <input type="text" id="last-name" name="last-name" autofocus required><br>
+            
+                <label for="email">Email:<span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="johndoe@example.com"><br>
+            
+                <label for="message">Query: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" name="submit" id="button" value="submit">
+            </form>
+            <p> <span class="required">*<em>indicates a required field</em></span></p>
+        </div>
+
+        </main>
+
+        <footer>
+
+            <nav>
+                <ul>
+                    <li id="active"> <a href="index.html"> Home </a></li>
+                    <li> <a href="sweets.html">Sweets</a></li>
+                    <li><a href="prices.html">Prices</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <p> &copy;2021 Foodmarket Sligo</p>
+
+        </footer>
+
+     </body>
+    </html>
