@@ -1,3 +1,4 @@
+/* start of header styling */
 header 
 {
     background-size: cover;
@@ -43,6 +44,7 @@ header nav ul li:hover
 {
     background-color: tan;
 }
+/* The ender of the header */
 
 body 
 {
@@ -52,10 +54,10 @@ body
     padding: 0;
 }
 
+/* Start of Home Page */
 #mainImage
 {
     padding: 8px;
-    border: 5px red;
 }
 
 #content 
@@ -64,15 +66,11 @@ body
     text-align: center;
     float: left;
     width: 78%;
-    border: 4px solid black;
-    border-radius: 5px;
 }
 
 aside 
 {
     padding: 6px;
-    border: 4px solid green;
-    border-radius: 5px;
     width: 18.5%;
     float: right;
 }
@@ -93,35 +91,81 @@ aside ul li a
     color: blue;
     text-decoration: none;
 }
+/* End of Home Page */
 
-#firstLine
-{
-    padding: 5px;
-    max-width: 1500px;
-    margin: 5px auto;
-    text-align: center;
-    border-radius: 5px;
-    max-width: 100%;
+/* Start of Image Grid Section */
+#sweetImages {
+    padding: 20px;
 }
 
-#secondLine
-{
-    padding: 5px;
-    max-width: 1500px;
-    margin: 5px auto;
-    text-align: center;
-    border-radius: 5px;
-    max-width: 100%;
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Creates 3 equal columns */
+    gap: 20px;
+    justify-items: center;  /* Centers each item horizontally */
 }
 
-#thirdLine
+.image-item {
+    text-align: center;  /* Centers the text underneath the image */
+}
+
+.image-item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px; 
+}
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+/* End of Image Grid Section
+
+/* Contents of About Us Page*/
+.videoContent
 {
+    float: center;
+    width: auto;
+    height: 550px;
+    overflow: auto;
     padding: 5px;
-    max-width: 1500px;
-    margin: 5px auto;
-    text-align: center;
-    border-radius: 5px;
-    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Flexbox layout for main content and the aside */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.main-content {
+    flex: 0 0 65%; /* Main content takes 65% of the space */
+}
+
+.aside {
+    flex: 0 0 30%; /* Aside with Google Maps */
+}
+
+.floated-image {
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    height: auto;
+}
+
+/* End of About Us Page*/
+
+/* Start of Contact form*/
+.backgroundImage {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
 }
 
 .form-container
@@ -133,13 +177,13 @@ aside ul li a
     padding: 20px;
     border-radius: 8px;
 
-    color: black;
+    color: white;
     text-align: center;
 }
 
 .required
 {
-    color: purple;
+    color: red;
     font-size: 18px;
     margin-left: 5px;
 }
@@ -165,11 +209,13 @@ textarea
 {
     resize: vertical;
 }
+/* End of Contact form*/
 
+/* Start of footer */
 footer 
 {
     clear: both;
-    border: 1px solid orange;
+    border: 1px solid grey;
     position: relative;
     bottom: 0px;
     width: 100%;
@@ -214,3 +260,4 @@ footer nav ul li:hover
 {
     background-color: tan;
 }
+/* End of footer */
